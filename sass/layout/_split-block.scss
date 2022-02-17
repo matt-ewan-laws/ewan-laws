@@ -1,0 +1,21 @@
+.split-block {
+    display: flex;
+    gap: var(--padding-normal);
+    flex-wrap: wrap;
+
+    &--v-align {
+        .split-block {
+            &__left,
+            &__right {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    }
+
+    &__left,
+    &__right {
+        flex: 1 0 calc(50% - var(--padding-normal) / 2);
+    }
+}

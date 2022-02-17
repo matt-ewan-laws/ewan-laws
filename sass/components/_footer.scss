@@ -1,0 +1,35 @@
+.footer {
+    background-color: var(--primary-colour-dark);
+    padding: var(--padding-normal);
+    color: white;
+
+    p {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    a  {
+        color: var(--primary-colour-light);
+    }
+
+    &__wrap {
+        max-width: var(--max-width);
+        margin: auto;
+    }
+
+    &__copy {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    &__attribution {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        &-icon {
+            margin-right: 10px;
+        }
+    }
+}
