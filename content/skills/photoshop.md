@@ -1,4 +1,8 @@
 ---
 title: Photoshop
-level: Intermediate
+weight: 40
+
+extra:
+    level: Intermediate
+    devicon: photoshop
 ---

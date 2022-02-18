@@ -1,4 +1,8 @@
 ---
 title: WordPress
-level: Intermediate
+weight: 17
+
+extra:
+    level: Intermediate
+    devicon: wordpress
 ---

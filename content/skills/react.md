@@ -1,4 +1,7 @@
 ---
 title: React
-level: Advanced
+weight: 13
+extra:
+    level: Advanced
+    devicon: react
 ---

@@ -1,4 +1,7 @@
 ---
 title: HTML5
-level: Advanced
+weight: 15
+extra:
+    level: Advanced
+    devicon: html5
 ---
