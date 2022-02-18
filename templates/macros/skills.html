@@ -1,0 +1,16 @@
+{% macro skills(skills) -%}
+<ul class="skills-list">
+{% for skill in skills %}
+    <li class="skill">
+        <div class="skill__header">
+            <i class="skill__icon devicons devicons-{{skill.extra.devicon}}"></i>
+            <h2 class="skill__title">{{ skill.title }}</h2>
+        </div>
+        <div class="skill__body">
+            {{ skill.content }}
+        </div>
+        <p class="skill__level">{{skill.extra.level}}</p>
+    </li>
+{% endfor %}
+</ul>
+{% endmacro %}

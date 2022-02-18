@@ -1,21 +1,17 @@
+{% import "macros/skills.html" as skills %}
 {% extends "bases/skills.html" %}
 
 {% block content %}
 
-<ul class="skills-list">
-{% for skill in section.pages %}
-    <li class="skill">
-        <div class="skill__header">
-            <i class="skill__icon devicons devicons-{{skill.extra.devicon}}"></i>
-            <h2 class="skill__title">{{ skill.title }}</h2>
-        </div>
-        <div class="skill__body">
-            {{ skill.content }}
-        </div>
-        <p class="skill__level">{{skill.extra.level}}</p>
-    </li>
-{% endfor %}
-</ul>
 
+<div class="split-block">
+    <div class="split-block__left">
+        {{ skills::skills(skills=section.pages) }}
+    </div>
+
+    <div class="split-block__right skills-main__content">
+        {{ section.content | safe }}
+    </div>
+</div>
 
 {% endblock content %}

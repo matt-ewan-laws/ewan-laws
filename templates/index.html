@@ -1,4 +1,5 @@
 {% import "macros/svgs.html" as svgs %}
+{% import "macros/skills.html" as skills %}
 {% import "macros/favicon.html" as favicon_macro %}
 <!doctype html>
 <html lang="en">
@@ -24,8 +25,15 @@
   </nav>
 </header>
 
-<main class="about-me js-slide-in">
-    <article class="article-fixed margin-bottom" id="first-item">
+<main class="about-me">
+    <article class="article-fixed js-slide-in">
+        <h2 class="article-fixed__header">Tech stack</h2>
+        {% set skills_section = get_section(path="skills/_index.md") %}
+        {{ skills::skills(skills=skills_section.pages) }}
+    </article>
+
+
+    <article class="article-fixed margin-bottom js-slide-in" id="first-item">
         <h2 class="article-fixed__header">About me</h2>
         <div class="split-block split-block--v-align">
             <div class="split-block__left">
@@ -35,9 +43,9 @@
             </div>
 
             <div class="split-block__right about-me__bio">
+                <p>Devoted husband and father</p>
                 <p>I began tinkering with JavaScript in my mid-teens, that interest never waned.</p>
-                <p>Programming spawned from that with my in-built desire to build and tinker.</p>
-                <p>Browsers provide a ubiquitous platform to build mobile and desktop applications. It is my privilege to be a part of this ecosystem.</p>
+                <p>Browsers provide a ubiquitous platform to build mobile and desktop applications. I consider it a privilege to be a part of this ever evolving ecosystem.</p>
             </div>
         </div>
     </article>

@@ -1,0 +1,10 @@
+
+.skills-main {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 var(--padding-normal);
+
+    &__content {
+        margin-top: 100px;
+    }
+}
