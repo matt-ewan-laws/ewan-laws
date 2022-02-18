@@ -7,3 +7,14 @@ function isInViewport(element) {
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
+
+document.body.onload = function() {
+    const els = document.querySelectorAll('.js-slide-in')
+    els.forEach(el => {
+        document.body.onscroll = function() {
+            if (isInViewport(el)) {
+                el.classList.add('js-slide-in--show')
+            }
+        }
+    })
+}
