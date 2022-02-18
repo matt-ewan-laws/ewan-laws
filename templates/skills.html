@@ -2,8 +2,6 @@
 {% extends "bases/skills.html" %}
 
 {% block content %}
-
-
 <div class="split-block">
     <div class="split-block__left">
         {{ skills::skills(skills=section.pages) }}
@@ -13,5 +11,4 @@
         {{ section.content | safe }}
     </div>
 </div>
-
 {% endblock content %}

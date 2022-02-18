@@ -1,0 +1,3 @@
+{% macro active(path, modifier="active") -%}
+{% if section and section.path == path -%}{{modifier}}{% endif -%}
+{% endmacro -%}
