@@ -1,4 +1,5 @@
 {% import "macros/svgs.html" as svgs %}
+{% import "macros/favicon.html" as favicon_macro %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -18,7 +19,9 @@
   </div>
 
 
-  {% include "partials/nav.html" %}
+  <nav class="nav nav--full">
+    {% include "partials/nav.html" %}
+  </nav>
 </header>
 
 <main>
@@ -42,6 +45,5 @@
 
 {% include "partials/footer.html" %}
 
-<script type="text/javascript" src="main.js"></script>
 </body>
 </html>

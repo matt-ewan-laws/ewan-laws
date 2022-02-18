@@ -1,0 +1,31 @@
+{% import "macros/svgs.html" as svgs %}
+{% import "macros/favicon.html" as favicon_macro %}
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Matthew Ewan-Laws - Web Developer</title>
+  {% include "partials/head.html" %}
+</head>
+<body class="page">
+
+<header class="header">
+    <div class="header__container">
+        <div class="header__title-container">
+            <h1 class="header__title">Matthew<span class="no-wrap">&nbsp;Ewan-Laws</span></h1>
+            <div class="header__subtitle" role="doc-subtitle">Web Developer</div>
+        </div>
+
+        <nav class="nav">
+            {% include "partials/nav.html" %}
+        </nav>
+    </div>
+</header>
+
+<main class="skills-main">
+    {% block content %}{% endblock %}
+</main>
+
+{% include "partials/footer.html" %}
+
+</body>
+</html>
