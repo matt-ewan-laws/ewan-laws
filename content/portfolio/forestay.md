@@ -10,3 +10,5 @@ extra:
         - JavaScript (jQuery)
         - Advance Custom Fields PRO
 ---
+
+I was tasked with building this website from the designs provided.
