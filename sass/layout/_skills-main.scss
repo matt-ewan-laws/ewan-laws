@@ -2,13 +2,18 @@
 .skills-main {
     max-width: var(--max-width);
     margin: auto;
-    padding: 0 var(--padding-normal);
+
+    @media only screen and (min-width: 730px) {
+        padding: 0 var(--padding-normal);
+    }
 
     &__content {
+        padding: 0 var(--padding-normal);
         order: -1;
-        @media only screen and (min-width: 740px) {
-            order: initial;
+
+        @media only screen and (min-width: 700px) {
             margin-top: 100px;
+            padding: 0;
         }
     }
 }

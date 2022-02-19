@@ -1,14 +1,17 @@
+{% extends "bases/page.html" %}
+
 {% import "macros/skills.html" as skills %}
-{% extends "bases/skills.html" %}
 
 {% block content %}
-<div class="split-block">
-    <div class="split-block__left">
-        {{ skills::skills(skills=section.pages) }}
-    </div>
+<main class="skills-main">
+    <div class="split-block">
+        <div class="split-block__left">
+            {{ skills::skills(skills=section.pages, right=true) }}
+        </div>
 
-    <div class="split-block__right skills-main__content">
-        {{ section.content | safe }}
+        <div class="split-block__right skills-main__content">
+            {{ section.content | safe }}
+        </div>
     </div>
-</div>
+</main>
 {% endblock content %}
