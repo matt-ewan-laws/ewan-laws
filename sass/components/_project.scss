@@ -8,15 +8,45 @@
     margin: 40px 0;
 
     &__image-container {
-        width: 500px;
+        max-width: 600px;
         margin: auto;
+    }
 
-        > img {
-            width: 100%;
-        }
+    &__image {
+        width: 100%;
     }
 
     &__title {
         text-align: center;
     }
+
+    &__tech {
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            gap: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        &-item {
+            font-size: 14px;
+            color: white;
+            background-color: #a71d31;
+            padding: 1px 4px;
+            border-radius: 5px;
+
+        }
+    }
+
+    &__content {
+        max-width: 800px;
+        padding: 0 var(--padding-normal);
+        margin: 40px auto;
+    }
+
 }

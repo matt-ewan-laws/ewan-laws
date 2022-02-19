@@ -7,7 +7,16 @@
         <li class="project js-slide-in">
             <h2 class="project__title">{{ project.title }}</h2>
             <div class="project__image-container">
-                <img src="/images/portfolio-images/{{ project.extra.image }}" alt="Screenshot of {{project.title}}" />
+                <a href="{{ project.permalink }}">
+                    <img src="/images/portfolio-images/{{ project.extra.image }}" class="project__image" alt="Screenshot of {{project.title}}" />
+                </a>
+            </div>
+            <div class="project__info">
+                <ul class="project__tech-list">
+                    {% for tech in project.extra.tech %}
+                        <li class="project__tech-item">{{ tech }}</li>
+                    {% endfor %}
+                </ul>
             </div>
         </li>
     {% endfor %}

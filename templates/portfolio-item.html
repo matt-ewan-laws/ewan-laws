@@ -1,0 +1,25 @@
+{% extends "bases/page.html" %}
+
+{% block content %}
+<main class="portfolio-main">
+    <article class="project js-slide-in">
+        <h2 class="project__title">{{ page.title }}</h2>
+        <div class="project__image-container">
+            <a href="{{ page.permalink }}">
+                <img src="/images/portfolio-images/{{ page.extra.image }}" class="project__image" alt="Screenshot of {{page.title}}" />
+            </a>
+        </div>
+        <div class="project__info">
+            <ul class="project__tech-list">
+                {% for tech in page.extra.tech %}
+                    <li class="project__tech-item">{{ tech }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="project__content">
+            {{ page.content | safe }}
+        </div>
+    </article>
+</main>
+{% endblock content %}
