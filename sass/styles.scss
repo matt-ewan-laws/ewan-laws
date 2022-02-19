@@ -1,5 +1,6 @@
 @import "global";
 @import "variables";
+@import "animations";
 @import "typography";
 @import "utilities";
 
@@ -8,6 +9,7 @@
 @import "components/footer";
 @import "components/about-me";
 @import "components/skill";
+@import "components/project";
 
 @import "layout/article-fixed";
 @import "layout/split-block";

@@ -12,14 +12,18 @@ function isInViewport(element) {
     );
 }
 
+function showOnView(el) {
+    if (isInViewport(el)) {
+        console.log('inside')
+        el.classList.add('js-slide-in--show')
+    }
+}
+
 document.body.onload = function() {
     const els = document.querySelectorAll('.js-slide-in')
+    els.forEach(showOnView)
+
     document.body.onscroll = function() {
-        els.forEach(el => {
-            if (isInViewport(el)) {
-                console.log('inside')
-                el.classList.add('js-slide-in--show')
-            }
-        })
+        els.forEach(showOnView)
     }
 }

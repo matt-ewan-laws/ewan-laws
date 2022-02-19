@@ -8,6 +8,10 @@
     justify-content: center;
     max-width: var(--max-width);
     padding: 0 20px;
+
+    &--left {
+        justify-content: flex-start;
+    }
 }
 
 .skill {

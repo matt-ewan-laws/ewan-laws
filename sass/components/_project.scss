@@ -1,0 +1,22 @@
+.projects {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project {
+    margin: 40px 0;
+
+    &__image-container {
+        width: 500px;
+        margin: auto;
+
+        > img {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        text-align: center;
+    }
+}
