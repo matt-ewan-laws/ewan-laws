@@ -63,9 +63,10 @@
     border: 1px solid #A71D31;
     color: #A71D31;
     padding: 2px 8px;
-    margin-left: auto;
+    margin: 0 auto;
 
     @media only screen and (min-width: 600px) {
+      margin-right: initial;
       text-align: left;
     }
   }
@@ -92,7 +93,7 @@
     width: 100vw;
     text-align: center;
 
-    @media only screen and (min-width: 500px) {
+    @media only screen and (min-width: 687px) {
       padding-right: var(--middle-padding);
       border-right: 1px solid slategray;
       width: initial;
@@ -134,21 +135,26 @@
     font-size: 20px;
     margin-bottom: 5px;
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
     border: 1px solid #A71D31;
     color: #A71D31;
     padding: 2px 8px;
     opacity: 0;
-    margin-left: auto;
     animation: fade-slide 500ms;
     animation-delay: 100ms;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+
+    @media only screen and (min-width: 687px) {
+      margin-right: initial;
+    }
   }
 
   &__nav {
     align-self: flex-start;
 
-    @media only screen and (min-width: 500px) {
+    @media only screen and (min-width: 687px) {
       width: initial;
       margin: 0 0 0 var(--middle-padding);
       align-self: initial;
