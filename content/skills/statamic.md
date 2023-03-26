@@ -1,8 +1,8 @@
 ---
 title: Statamic
-weight: 5
+weight: 16
 
 extra:
     level: Intermediate
-    devicon: php
+    devicon: laravel
 ---
