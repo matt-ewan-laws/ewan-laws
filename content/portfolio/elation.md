@@ -3,7 +3,7 @@ title: Elation
 weight: 5
 
 extra:
-    url: https://github.com/matt-ewan-laws/task
+    repo: https://github.com/matt-ewan-laws/task
     image: elation.png
     tech:
         - HTML

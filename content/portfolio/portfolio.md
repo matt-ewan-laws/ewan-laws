@@ -3,7 +3,8 @@ title: This website
 weight: 6
 
 extra:
-    url: ewan-laws.pages.dev
+    url: https://ewan-laws.pages.dev
+    repo: https://github.com/matt-ewan-laws/ewan-laws
     image: ewan-laws.png
     tech:
         - HTML
