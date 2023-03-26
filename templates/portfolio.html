@@ -5,7 +5,25 @@
     <ul class="projects">
     {% for project in section.pages %}
         <li class="project js-slide-in">
-            <h2 class="project__title">{{ project.title }}</h2>
+            <h2 class="project__title">
+                {{ project.title }}
+
+                <a href="{{ project.permalink }}">
+                    <i class="fa-sharp fa-solid fa-circle-info"></i>
+                </a>
+
+                {% if project.extra.url %}
+                    <a href="{{ project.extra.url }}" target="_blank">
+                        <i class="fa-sharp fa-solid fa-link"></i>
+                    </a>
+                {% endif %}
+
+                {% if project.extra.repo %}
+                    <a href="{{ project.extra.repo }}" target="_blank">
+                        <i class="devicon-github-original"></i>
+                    </a>
+                {% endif %}
+            </h2>
             <div class="project__image-container">
                 <a href="{{ project.permalink }}">
                     <img src="/images/portfolio-images/{{ project.extra.image }}" class="project__image" alt="Screenshot of {{project.title}}" />
